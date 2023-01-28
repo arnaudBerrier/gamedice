@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+
+body{
+	height: 100vh;
+	background: rgb(131,58,180);
+	background: linear-gradient(248deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Solitreo', cursive;
+}
+.box{
+    background-color:rgb(255, 255, 255);
+	margin-top: 3rem;
+    text-align: center;
+    padding-top: 1.9rem;
+	border-radius: 2rem;   
+}
+
+.title {
+	margin-top: 5rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+
+
+
+.nav-link {
+	text-align: center;
+	cursor: pointer;
+}
+
+#new:hover{
+    cursor: pointer;
+    
+}
+
+#new:hover .icon{
+    padding-right: 7px;
+    transition: 0.15s;
+    transition-timing-function: ease-in;
+    
+}
+
+.player-0{
+    padding-bottom: 3.75rem;
+}
+
+.player-1{
+    padding-bottom: 3.75rem;
+}
+
+.score-0{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.score-1{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.current-box{
+	background: rgb(131,58,180);
+	background: linear-gradient(248deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.6022335122699387) 50%, rgba(252,176,69,1) 100%);
+    margin: auto;
+    max-width: 40%;
+    color: white;
+    padding: 0.6rem;
+	border-radius: 1rem;
+}
+
+.dice-box img{
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 3.75rem;
+}
+
+.dice-box{
+    margin-top: 4.3rem;
+}
+
+#rotate,
+#hold{
+    cursor: pointer;
+   
+}
+
+#rotate:hover .r-icon,
+#hold:hover .h-icon{
+    padding-right: 0.4rem;
+    transition: 0.15s;
+    transition-timing-function: ease-in;
+}
+
+
+.player-0 i{
+    display: none;
+}
+
+.player-1 i{
+    display: none;
+}
+
+.active{
+    font-weight: 900;
+    color: rgb(252, 0, 0);
+}
+
+.active i {
+    display: inline;
+    font-size: 17px;
+    
+}
+
+@media screen and (max-width: 1000px) {
+	.title {
+		margin-top: 2.5rem;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 4rem;
+	}
+
+	div.current-box h5{
+		margin: auto;
+		font-size: 1rem;
+	}
+
+	@media screen and (max-width: 770px) {
+		#dice-img {
+			width: 4rem;
+			height: 4rem;
+		}
+
+		@media screen and (max-width: 580px) {
+			
+			.nav-link{
+				margin-bottom: 1rem;
+			}
+
+			.title {
+				margin-top: 3rem;
+				font-size: 3rem;
+			}
+
+			div.box {
+				width: 70%;
+				margin: auto;
+			}
+
+			h2 {
+				font-size: 1rem;
+			}
+			
+			.dice-box img{
+				margin-bottom: 1rem;
+			}
+
+			.player-1{
+				padding: 1rem;
+			}
+
+			.score-0,
+			.score-1,
+			.player-0,
+			.innerRow {
+				margin: 0;
+				padding: 0;
+			}
+
+			#hold{
+				margin: 1rem;
+			}
+		}
+	}	
+}
+
+
+
+
+
