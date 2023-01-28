@@ -19,9 +19,41 @@
 
 <body>
 	<div class="container">
-			<h1 class='title'>Dice Game</h1>
-			<a class="nav-link" data-toggle="modal" data-target="#exampleModal">Instructions</a>
-	
+		<h1 class='title'>Dice Game</h1>
+		<!-- Button trigger modal -->
+		<div class="d-flex justify-content-center">
+			<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modal">
+				Instructions
+			</button>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalInstruction" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Instructions</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>Règles :</p>
+						<p>
+							Le jeu comprend 2 joueurs sur un seul et même écran. <br>
+							Chaque joueur possède un score temporaire et un score global. <br>
+							À chaque tour, le joueur a son score initialisé à 0 et peut lancer un dé autant de fois
+							qu'il le souhaite. Le résultat d’un lancer est ajouté au score total.
+						</p>
+						<p>Lors de son tour, le joueur peut décider à tout moment de:</p>
+							<ul>
+								<li>Cliquer sur l’option 'Hold', qui permet d’envoyer les points du tour vers le score global. Ce sera alors le tour de l’autre joueur.</li>
+								<li>Lancer le dé. S’il obtient un 1, son score temporaire est perdu et c’est la fin de son tour.</li>
+							</ul>						
+						<p>Le premier joueur qui atteint les 100 points gagne le jeu.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="col-sm-2"></div>
 			<div class="box">
@@ -44,7 +76,7 @@
 
 					<div class="dice-box col-sm-2">
 
-						<img src="img/dice-1.png" id="dice-img" class="rounded mx-auto d-block shake animated">
+						<img src="img/dice-5.png" id="dice-img" class="rounded mx-auto d-block shake animated">
 
 						<h5 id="rotate"><i class="fas fa-sync-alt r-icon"></i> Play </h5>
 						<h5 id="hold"><i class="fas fa-chevron-down h-icon"></i> Hold </h5>

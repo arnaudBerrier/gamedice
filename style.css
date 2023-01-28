@@ -2,8 +2,8 @@
 
 body{
 	height: 100vh;
-	background: rgb(131,58,180);
-	background: linear-gradient(248deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	background: rgb(83,180,58);
+background: linear-gradient(248deg, rgba(83,180,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Solitreo', cursive;
@@ -25,11 +25,6 @@ body{
 }
 
 
-
-.nav-link {
-	text-align: center;
-	cursor: pointer;
-}
 
 #new:hover{
     cursor: pointer;
@@ -62,8 +57,8 @@ body{
 }
 
 .current-box{
-	background: rgb(131,58,180);
-	background: linear-gradient(248deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.6022335122699387) 50%, rgba(252,176,69,1) 100%);
+	background: rgb(83,180,58);
+	background: linear-gradient(248deg, rgba(83,180,58,1) 0%, rgba(253,29,29,0.6022335122699387) 50%, rgba(252,176,69,1) 100%);
     margin: auto;
     max-width: 40%;
     color: white;
@@ -135,7 +130,7 @@ body{
 
 		@media screen and (max-width: 580px) {
 			
-			.nav-link{
+			.btn{
 				margin-bottom: 1rem;
 			}
 
