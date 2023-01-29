@@ -1,6 +1,9 @@
-let score = [0 , 0];       //Global score
-let roundScore = 0;     //round score
-let current = 0;        //current player  
+/**
+ * Initialization of game variables
+ */
+let score = [0 , 0];       
+let roundScore = 0;    
+let current = 0;         
 let dice;
 let gameRunning = true;
 let animation = 0;
@@ -11,10 +14,15 @@ let animation = 0;
     document.querySelector(".current-1").textContent = "0";
 
 
-
+/**
+ * Function that allows you to select a random dice face
+ */
 document.getElementById("rotate").onclick = function(){
     dice = Math.floor(Math.random()*6 + 1);
-    
+
+/**
+ * Implementation of game conditions
+ */    
  if(gameRunning){    
      
     document.querySelector("#dice-img").src = "img/dice-"+dice+".png";
@@ -48,7 +56,9 @@ document.getElementById("rotate").onclick = function(){
  }
 }
 
-
+/**
+ * Setting up game saves
+ */
 document.getElementById("hold").onclick = function(){
 
   if(gameRunning){    
@@ -72,7 +82,9 @@ document.getElementById("hold").onclick = function(){
     
  }
 
-
+/**
+ * Lets start a new game
+ */
 document.querySelector("#new").addEventListener('click',game);
 
 
